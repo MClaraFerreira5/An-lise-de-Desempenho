@@ -54,7 +54,7 @@ print(inverteLista(c))
 
 # Exercicio 8  
 def contaOcorr(lista, x):
-    return sum([i for i in lista if i == x])
+    return len([i for i in lista if i == x])
 
 # Exercicio 9
 def somaPositivos(lista):
@@ -65,11 +65,11 @@ def produtoElem(lista):
     prod = 1
     for i in lista:
         prod *= i
-    return i
+    return prod
 
 # Exercicio 11
-def contaVogal(lista):
-    return sum([i for i in lista if i in "aeiou"])
+def contaVogal(string): 
+    return len([i for i in string if i.lower() in "aeiou"])
 
 # Exercicio 12
 def contaCaracteres(a):
@@ -77,11 +77,12 @@ def contaCaracteres(a):
 
 # Exercicio 13
 def palindromo(a):
-    return a == reversed(a)
+    a_formatado = a.lower()
+    return a_formatado == a_formatado[::-1]
 
 # Exercicio 14
-def contCaracteres(lista, a):
-    return sum([i for i in lista if i == a])
+def contCaracteres(string, a):
+    return len([i for i in string if i == a])
 
 # Exercicio 15
 def substituirCaracteres(list, a, b):
@@ -95,8 +96,8 @@ def maiusculasMinusculas(lista):
     for i in lista:
         if i.isUpper():
             maior += 1
-        else:
-            menor+=1
+        elif i.islower():
+            menor += 1
     print(f"Maiúscula: {maior} | Minúcula: {menor}")
 
 # Exercicio 17
