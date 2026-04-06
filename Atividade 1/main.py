@@ -22,7 +22,7 @@ def contaPares(lista):
 print(contaPares(c))
 
 # Exercicio 3
-def ehMaior(lista): 
+def ehMaior(lista):
     return max(lista)
 
 print(ehMaior(c))
@@ -52,7 +52,7 @@ def inverteLista(lista):
 
 print(inverteLista(c))
 
-# Exercicio 8  
+# Exercicio 8
 def contaOcorr(lista, x):
     return len([i for i in lista if i == x])
 
@@ -68,7 +68,7 @@ def produtoElem(lista):
     return prod
 
 # Exercicio 11
-def contaVogal(string): 
+def contaVogal(string):
     return len([i for i in string if i.lower() in "aeiou"])
 
 # Exercicio 12
@@ -106,6 +106,6 @@ def removeEspaco(a):
 
 # Exercicio 18
 def primeiroCaractere(a):
-    if not a: 
+    if not a:
         return None
     return a[0]
